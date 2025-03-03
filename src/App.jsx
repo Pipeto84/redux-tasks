@@ -1,11 +1,8 @@
 import './App.css'
-import { useSelector } from 'react-redux'
 import { TaskForm } from './components/TaskForm'
 import { TaskList } from './components/TaskList'
 
 function App() {
-const tasks = useSelector(store=> store.tasks)
-console.log(tasks)
 
   return (
     <div className='App'>
