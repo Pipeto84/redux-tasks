@@ -54,6 +54,7 @@ export const TaskForm = () => {
         onChange={handleChange}
         value={task.title}
         className="w-full p-2 rounded-md bg-zinc-600 mb-2"
+        autoComplete="off"
       />
       <label htmlFor="description" className="block text-xs font-bold mb-2">
         Description:
