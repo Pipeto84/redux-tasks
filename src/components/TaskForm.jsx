@@ -55,6 +55,7 @@ export const TaskForm = () => {
         value={task.title}
         className="w-full p-2 rounded-md bg-zinc-600 mb-2"
         autoComplete="off"
+        autoFocus
       />
       <label htmlFor="description" className="block text-xs font-bold mb-2">
         Description:
@@ -66,7 +67,12 @@ export const TaskForm = () => {
         value={task.description}
         className="w-full p-2 rounded-md bg-zinc-600 mb-2"
       ></textarea>
-      <button className="bg-indigo-600 px-2 py-1 rounded-md">Save</button>
+      <button
+        className="bg-indigo-600 px-2 py-1 rounded-md cursor-pointer"
+        disabled={task.title.length < 1}
+      >
+        Save
+      </button>
     </form>
   );
 };
