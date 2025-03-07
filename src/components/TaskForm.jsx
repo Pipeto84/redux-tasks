@@ -43,7 +43,7 @@ export const TaskForm = () => {
   }, [params.id, tasks]);
 
   return (
-    <form onSubmit={handleSubmit} className="bg-zinc-800 max-w-sm p-4">
+    <form onSubmit={handleSubmit} className="bg-zinc-800 max-w-sm p-4 rounded-xl">
       <label htmlFor="title" className="block text-xs font-bold mb-2">
         Task:
       </label>
@@ -68,7 +68,7 @@ export const TaskForm = () => {
         className="w-full p-2 rounded-md bg-zinc-600 mb-2"
       ></textarea>
       <button
-        className="bg-indigo-600 px-2 py-1 rounded-md  disabled:opacity-25"
+        className="bg-indigo-600 px-2 py-1 rounded-md cursor-pointer disabled:opacity-25 disabled:cursor-not-allowed"
         disabled={task.title.length < 1}
       >
         Save
