@@ -9,7 +9,7 @@ export const TaskList = () => {
     dispatch(deleteTask(id));
   };
   return (
-    <div className="w-4/6">
+    <div className="w-4/6 ">
       <header className="flex justify-between items-center py-4">
         <h1 className="font-bold">Tasks: {tasks.length}</h1>
         <Link
@@ -19,7 +19,7 @@ export const TaskList = () => {
           Create Task
         </Link>
       </header>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-4 taskList">
         {tasks.map((task) => (
           <div key={task.id} className="bg-neutral-800 p-4 rounded-md">
             <header className="flex justify-between">

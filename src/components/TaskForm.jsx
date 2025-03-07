@@ -68,7 +68,7 @@ export const TaskForm = () => {
         className="w-full p-2 rounded-md bg-zinc-600 mb-2"
       ></textarea>
       <button
-        className="bg-indigo-600 px-2 py-1 rounded-md cursor-pointer disabled:opacity-25 disabled:cursor-not-allowed"
+        className="bg-indigo-600 px-2 py-1 rounded-md xxx disabled:opacity-25 disabled:cursor-not-allowed"
         disabled={task.title.length < 1}
       >
         Save

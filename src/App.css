@@ -1,2 +1,8 @@
 @import "tailwindcss";
 
+@media screen and (max-width: 50rem) {
+  .taskList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
