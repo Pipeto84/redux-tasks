@@ -43,7 +43,10 @@ export const TaskForm = () => {
   }, [params.id, tasks]);
 
   return (
-    <form onSubmit={handleSubmit} className="bg-zinc-800 max-w-sm p-4 rounded-xl">
+    <form
+      onSubmit={handleSubmit}
+      className="bg-zinc-800 max-w-sm p-4 rounded-xl"
+    >
       <label htmlFor="title" className="block text-xs font-bold mb-2">
         Task:
       </label>
